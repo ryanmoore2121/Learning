@@ -8,7 +8,8 @@ getrandom = random.choice(options)
 #Get players name
 def playersname():
     playername = input("Hello, welcome to the rock, paper, scissors game. What is your name? ")
-    return playername
+    name = print(f"Nice to meet you " + playername + " let's play!")
+    return name
     
 
 # Function to pick choices and have computer generate a random choice
@@ -40,9 +41,7 @@ def check_win(player, computer):
         else:
             return "Scissors beats paper... You lose :'("
 
-#Calls the functions to greet the player
-name = playersname()
-startgame = print(f"Hello {name}, let's play rock, paper, scissors!")
+playersname()
 
 #Wait one seconds
 time.sleep(1)
